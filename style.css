@@ -1,9 +1,10 @@
-/* COMMON STYLES */
-/* COMMON STYLES */
+/* RESET STYLES */
 * {
   margin: 0;
   padding: 0;
 }
+
+/* COMMON STYLES */
 
 img {
   width: 100%;
@@ -31,8 +32,9 @@ body {
   margin: auto;
   width: auto;
 }
+
 /* NAVBAR STYLES */
-/* NAVBAR STYLES */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -58,8 +60,9 @@ nav {
   font-size: 1rem;
   font-weight: 500;
 }
+
 /* BANNER STYLES */
-/* BANNER STYLES */
+
 .banner-parent {
   width: 100%;
   height: 80vh;
@@ -92,4 +95,62 @@ nav {
   padding: 1.5rem 3rem;
   border-radius: 10px;
   font-size: 24px;
+}
+
+/* SPEAKERS STYLES */
+
+.speakers-parent {
+  font-family: "Inter", sans-serif;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  gap: 10px;
+}
+.speakers-parent h1 {
+  color: #000102;
+  font-weight: bold;
+  font-size: 56px;
+}
+.speakers-cards-parent {
+  padding: 20px 90px 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.common-card {
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.speaker-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.speaker-track {
+  color: #2563eb;
+  font-size: 12px;
+  /* semi bold font weight */
+  font-weight: 600;
+}
+
+.speaker-name {
+  color: #0d1b2a;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.speaker-company {
+  color: #575757;
+  font-size: 14px;
 }
