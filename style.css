@@ -154,3 +154,47 @@ nav {
   color: #575757;
   font-size: 14px;
 }
+
+/* PRICING Styles */
+
+.pricing-parent {
+  font-family: "Inter", sans-serif;
+}
+
+.pricing-card-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* margin: auto;
+  padding: 0 auto; */
+}
+
+.common-pricing-card {
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.package-details {
+  width: 94%;
+  margin: 0 auto;
+}
+.pricing-card-divider {
+  width: 94%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.package-features {
+  width: 94%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.package-features ul {
+  padding-left: 20px;
+}
+.pricing-button {
+  width: 94%;
+  margin: 20px auto 30px;
+}
