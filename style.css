@@ -5,13 +5,20 @@
 }
 
 /* COMMON STYLES */
-
+a {
+  cursor: pointer;
+}
 img {
   width: 100%;
   object-fit: cover;
 }
 body {
   background-color: rgb(215, 209, 209);
+}
+hr {
+  background-color: #e5e7eb;
+  border: none;
+  height: 1px;
 }
 .common-container {
   max-width: 1200px;
@@ -43,9 +50,7 @@ nav {
   font-family: "Arimo", sans-serif;
   margin: 0 60px;
 }
-.nav-icon-parent img {
-  object-fit: cover;
-}
+
 .nav-menu-parent ul {
   list-style: none;
   display: flex;
@@ -56,7 +61,6 @@ nav {
 .nav-menu-parent ul li a {
   text-decoration: none;
   color: #575757;
-  cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -210,7 +214,6 @@ nav {
   width: 80%;
   margin: 0 auto;
   padding-top: 20px;
-  color: #e5e7eb;
 }
 .package-features {
   width: 80%;
@@ -274,8 +277,8 @@ nav {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.pro-pricing-card .pricing-card-divider {
-  color: rgba(255, 255, 255, 0.1);
+.pro-pricing-card .pricing-card-divider hr {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .pro-pricing-card .package-features ul li {
@@ -301,3 +304,69 @@ nav {
 }
 
 /* FOOTER Styles */
+
+/* footer{
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+} */
+
+.footer-parent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px 25px;
+  background-color: #0d1b2a;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.footer-upper-left img {
+  width: 65%;
+  height: 65%;
+}
+
+.footer-upper-right {
+  padding-right: 0;
+}
+.footer-upper-right i {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-divider hr {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-lower {
+  padding-top: 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.footer-lower-left {
+  text-align: right;
+  padding-right: 1rem;
+}
+.footer-lower-right {
+  align-self: left;
+  padding-left: 1rem;
+}
+
+.footer-lower-right ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-lower-right li {
+  list-style: none;
+}
+
+.footer-lower-right li a {
+  text-decoration: none;
+}

@@ -6,13 +6,17 @@
     <title>DevConf Clone</title>
     <!-- Linking style.css  -->
     <link rel="stylesheet" href="./style.css">
-    <!-- Google Fonts: Arimo for Navbar Menu -->
-    <!-- Google Fonts: Inter for Navbar Button -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 
@@ -23,7 +27,7 @@
 
         <!-- nav icon -->
         <div class="nav-icon-parent">
-          <img src="./assets/logo.png" alt>
+          <a href="./index.html"><img src="./assets/logo.png" alt></a>
         </div>
         <!-- nav menu -->
         <div class="nav-menu-parent">
@@ -222,7 +226,43 @@
         </section>
       </main>
       <!-- FOOTER -->
-      <footer>
+      <footer class="common-container">
+
+        <div class="footer-parent">
+
+          <div class="footer-upper">
+            <div class="footer-upper-left">
+              <a href="./index.html"><img src="./assets/footer-logo.png"
+                  alt="devconf logo"></a>
+
+            </div>
+            <div class="footer-upper-right">
+              <a href="https://www.facebook.com/" target="_blank"><i
+                  class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a>
+              <a href="https://x.com/" target="_blank"><i
+                  class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+          </div>
+          <div class="footer-divider">
+            <hr>
+          </div>
+          <div class="footer-lower">
+            <div class="footer-lower-left">
+              <p>&copy; 2026 DevConf. All rights reserved.</p>
+            </div>
+            <div class="footer-lower-right">
+              <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
 
       </footer>
     </body>
