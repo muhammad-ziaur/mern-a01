@@ -112,14 +112,14 @@ nav {
 .speakers-parent h1 {
   color: #000102;
   font-weight: bold;
-  font-size: 56px;
+  font-size: 48px;
 }
 .speakers-cards-parent {
   padding: 20px 90px 60px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .common-card {
@@ -158,9 +158,29 @@ nav {
 /* PRICING Styles */
 
 .pricing-parent {
+  padding-top: 60px;
   font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
 }
-
+.pricing-heading {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.pricing-heading h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #0d1b2a;
+}
+.pricing-heading p {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #575757;
+  padding-bottom: 24px;
+}
 .pricing-card-parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -172,7 +192,7 @@ nav {
 
 .common-pricing-card {
   border: 2px solid #e5e7eb;
-  border-radius: 0.75rem;
+  border-radius: 12px;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -216,8 +236,9 @@ nav {
   background-color: white;
   color: #2563eb;
   border: 1px solid #2563eb;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
+  border-radius: 7px;
 }
 
 .package-type {
@@ -233,6 +254,50 @@ nav {
 
 .package-price {
   color: #0d1b2a;
-  font-size: 44;
   font-weight: bold;
 }
+
+.pro-pricing-card {
+  background-color: #0d1b2a;
+  border: none;
+}
+
+.pro-pricing-card .package-type {
+  color: #93c5fd;
+}
+
+.pro-pricing-card .package-price {
+  color: white;
+}
+
+.pro-pricing-card .package-unit {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.pro-pricing-card .pricing-card-divider {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.pro-pricing-card .package-features ul li {
+  color: #60a5fa;
+}
+
+.pro-pricing-card .package-features ul li span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.pro-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+}
+.team-pricing-card {
+  background-color: #f8f9fb;
+}
+
+.team-button {
+  border-color: #0d1b2a;
+  color: #0d1b2a;
+}
+
+/* FOOTER Styles */
