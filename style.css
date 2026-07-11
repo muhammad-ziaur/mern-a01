@@ -22,6 +22,7 @@ hr {
 }
 .common-container {
   max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
   background-color: white;
 }
@@ -32,10 +33,10 @@ hr {
   background-color: #1d4ed8;
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   font-weight: bold;
-  font-size: 1rem;
-  padding: 8px 3rem;
+  font-size: 14px;
+  padding: 9px 2rem;
   margin: auto;
   width: auto;
 }
@@ -63,8 +64,17 @@ nav {
   color: #575757;
   font-size: 1rem;
   font-weight: 500;
+  transition: all 0.6s;
 }
-
+.nav-menu-parent ul li a:hover {
+  box-shadow: 0px 5px 15px 10px rgba(113, 104, 104, 0.3);
+}
+nav button {
+  transition: all 0.6s;
+}
+nav button:hover {
+  background-color: #0d1b2a;
+}
 /* BANNER STYLES */
 
 .banner-parent {
@@ -88,19 +98,26 @@ nav {
 .banner-heading {
   margin-top: 5rem;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 70px;
 }
 .banner-paragraph {
   margin-top: 1.25rem;
-  font-size: 22px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
 }
 .banner-button {
   margin-bottom: 4rem;
-  padding: 1.5rem 3rem;
-  border-radius: 10px;
-  font-size: 24px;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s all;
 }
-
+.banner-button:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.7);
+  color: #1d4ed8;
+  background-color: white;
+}
 /* SPEAKERS STYLES */
 
 .speakers-parent {
@@ -152,8 +169,13 @@ nav {
   color: #0d1b2a;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s all;
 }
-
+.speaker-name:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
 .speaker-company {
   color: #575757;
   font-size: 14px;
@@ -162,11 +184,11 @@ nav {
 /* PRICING Styles */
 
 .pricing-parent {
-  padding-top: 60px;
+  padding-top: 50px;
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .pricing-heading {
   display: flex;
@@ -201,8 +223,12 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  transition: all 0.6s;
 }
-
+.common-pricing-card:hover {
+  transform: translateY(-10px) scale(1.08);
+  box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.1);
+}
 .package-details {
   width: 80%;
   margin: 0 auto;
@@ -242,8 +268,13 @@ nav {
   font-size: 12px;
   font-weight: 600;
   border-radius: 7px;
+  transition: all 0.6s;
 }
-
+.pricing-button:hover {
+  color: white;
+  background-color: #2563eb;
+  border: 1px solid white;
+}
 .package-type {
   font-size: 13px;
   color: #888888;
@@ -293,7 +324,13 @@ nav {
   background-color: #2563eb;
   color: white;
   border: none;
+  transition: all 0.6s;
 }
+.pro-button:hover {
+  color: #2563eb;
+  background-color: white;
+}
+
 .team-pricing-card {
   background-color: #f8f9fb;
 }
@@ -301,6 +338,12 @@ nav {
 .team-button {
   border-color: #0d1b2a;
   color: #0d1b2a;
+  background-color: #f8f9fb;
+  transition: all 0.6s;
+}
+.team-button:hover {
+  color: #f8f9fb;
+  background-color: #0d1b2a;
 }
 
 /* FOOTER Styles */
@@ -312,6 +355,8 @@ nav {
 } */
 
 .footer-parent {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   padding: 20px 60px 25px;
@@ -327,15 +372,22 @@ nav {
 }
 
 .footer-upper-left img {
-  width: 65%;
-  height: 65%;
+  width: 70%;
+  height: 70%;
 }
 
 .footer-upper-right {
   padding-right: 0;
 }
+
 .footer-upper-right i {
   color: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem;
+  transition: 0.4s all;
+}
+.footer-upper-right i:hover {
+  transform: translateY(-3px) scale(1.4);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .footer-divider hr {
@@ -369,4 +421,177 @@ nav {
 
 .footer-lower-right li a {
   text-decoration: none;
+  transition: 0.6s all;
+}
+
+.footer-lower-right li a:hover {
+  text-decoration: underline;
+}
+
+/* PLACEHOLDER */
+
+.hackathon-parent {
+  font-family: "Inter", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hackathon-heading {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hackathon-heading h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #0d1b2a;
+}
+
+.hackathon-heading p {
+  padding-bottom: 40px;
+  color: #575757;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.hackathon-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 50px;
+  padding: 0 90px;
+}
+
+.hackathon-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hackathon-details h3 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #0d1b2a;
+}
+
+.hackathon-details p {
+  color: #575757;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.hackathon-timeline {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-left: 3px solid #2563eb;
+  padding-left: 15px;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+.hackathon-timeline li {
+  font-size: 14px;
+  color: #575757;
+}
+
+.hackathon-timeline li strong {
+  color: #2563eb;
+}
+
+.hackathon-button {
+  margin: 0;
+  transition: all 0.4s;
+}
+
+.hackathon-button:hover {
+  background-color: #0d1b2a;
+}
+
+.hackathon-terminal {
+  background-color: #0d1b2a;
+  border-radius: 12px;
+  min-height: 320px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(13, 27, 42, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.prize-badge {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background-color: #2563eb;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.prize-badge p {
+  margin: 0;
+  font-size: 11px;
+  font-weight: bold;
+  transform: scale(1.07);
+}
+
+.prize-badge span {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.terminal-top-bar {
+  background-color: #162638;
+  padding: 12px 15px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red {
+  background-color: #ff5f56;
+}
+.dot.yellow {
+  background-color: #ffbd2e;
+}
+.dot.green {
+  background-color: #27c93f;
+}
+
+.terminal-body {
+  padding: 25px;
+  font-family: "Courier New", Courier, monospace;
+  color: #60a5fa;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cmd-line {
+  color: #f8f9fb;
+  font-size: 14px;
+}
+
+.cmd-output {
+  font-size: 13px;
+  padding-left: 15px;
+  color: rgba(255, 255, 255, 0.6);
 }
